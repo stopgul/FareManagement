@@ -4,6 +4,6 @@ namespace FareManagement.Calculator.MeterOperations
 {
     public interface ICalculatorProvider
     {
-        FareDetails CalculateFare(TripDetail tripDetail);
+        FareDetailsBuilder CalculateFare(TripDetail tripDetail);
     }
 }

@@ -20,7 +20,7 @@ namespace FareManagement.Calculator.Test
                 MoreThan6MilesPerHourOr60SecondsDurationIndicator = 5,
                 TripDate = Convert.ToDateTime("01/17/2020 5:30pm")
             };
-            subject = new FareCalculatorProvider();
+            subject = new FareCalculatorProvider(new FareDetailsBuilder());
         }
 
         [TestMethod]

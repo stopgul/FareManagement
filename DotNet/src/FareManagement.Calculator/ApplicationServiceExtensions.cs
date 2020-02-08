@@ -8,6 +8,7 @@ namespace FareManagement.Calculator
         public static IServiceCollection AddFareManagementCalculator(this IServiceCollection services)
         {
             services.AddTransient<ICalculatorProvider, FareCalculatorProvider>();
+            services.AddTransient<IFareDetailsBuilder, FareDetailsBuilder>();
 
             return services;
         }

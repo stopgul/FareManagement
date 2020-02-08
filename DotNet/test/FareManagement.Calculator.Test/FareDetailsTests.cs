@@ -9,7 +9,7 @@ namespace FareManagement.Calculator
     public class FareDetailsTests
     {
         readonly TripDetail tripDetail;
-        readonly FareDetails subject;
+        readonly FareDetailsBuilder subject;
 
         public FareDetailsTests()
         {
@@ -20,7 +20,7 @@ namespace FareManagement.Calculator
                 MoreThan6MilesPerHourOr60SecondsDurationIndicator = 5,
                 TripDate = Convert.ToDateTime("01/17/2020 5:30pm")
             };
-            subject = new FareDetails();
+            subject = new FareDetailsBuilder();
         }
 
         [TestMethod]
